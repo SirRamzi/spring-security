@@ -8,12 +8,14 @@
 <form method="post" action="/process_login">
     <label for="username">Username: </label>
     <input type="text" name="username" id="username">
+    <br>
     <label for="password">Password: </label>
     <input type="password" name="password" id="password">
-    <input type="submit" value="Login">
-<!--    <div th:if="${param.error}}" style="color:red">-->
-<!--        Неверное имя или пароль-->
-<!--    </div>-->
+    <br>
+    <input type="submit" value="Sign in">
+    <div th:if="${param.error}" style="color:red">
+        Неверное имя или пароль
+    </div>
 </form>
 </body>
 </html>
